@@ -1,0 +1,283 @@
+/* Banner slider */
+.banner-slider {
+  background-color: #ffd700;
+  color: #222;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+}
+
+header {
+  background-color: #000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 90px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #111;
+  text-align: center;
+  padding: 40px 10px;
+  color: #00e676;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.section-button {
+  background-color: #2c3e50;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,255,0,0.1);
+}
+
+.section-button h2 {
+  font-size: 1.5rem;
+  color: #00e676;
+}
+
+.products {
+  padding: 10px 20px 30px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+/* تعديل البوكس الرئيسي للمنتج */
+.product {
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  text-align: center;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease;
+  max-width: 300px;  /* <-- تصغير العرض */
+  margin: 0 auto;     /* <-- توسيط البوكس */
+}
+
+/* تعديل الصورة */
+.product img {
+  width: 100%;         /* <-- تخليها تملى البوكس */
+  height: 400px;       /* <-- تصغير الطول */
+  object-fit: cover;
+  border-bottom: 2px solid #444;
+}
+
+/* تعديل استجابة الموبايلات */
+@media (max-width: 768px) {
+  .product img {
+    height: 280px; /* تصغير أكتر للموبايل */
+  }
+
+  .product h3 {
+    font-size: 0.9rem;
+  }
+
+  .product p {
+    font-size: 0.9rem;
+  }
+
+  .product button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+.product button {
+  background-color: #00e676;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+
+.product button:hover {
+  background-color: #00c853;
+}
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+}
+
+footer .social-links a {
+  color: #00e676;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.nav-button {
+  background-color: #00e676;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #00c853;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* كونتينر رئيسي يمسك الصفحة كلها */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/*سله مشتريات*/
+
+
+/* --- سلة المشتريات --- */
+
+.cart-section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+
+.cart-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+.cart-items {
+  margin-bottom: 30px;
+}
+
+.cart-item {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.cart-item p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.cart-item button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  transition: background 0.3s;
+}
+
+.cart-item button:hover {
+  background-color: #c0392b;
+}
+
+.cart-summary {
+  text-align: center;
+  font-size: 20px;
+  color: #222;
+}
+
+.checkout-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #218838;
+}
+.m{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <!-- Favicon -->
+   <link rel="shortcut icon" type="image/x-icon" href="Logo.jpg">
+
+  <title>Vero Clothing</title>
+  <link rel="stylesheet" href="Learn1.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Logo.jpg" alt="ClothStore Logo" />
+    </div>
+    <h1>Vero Clothing</h1>
+    <nav>
+      <ul>
+        <li><a href="#offers-list" class="nav-button">عروض اليوم</a></li>
+        <li><a href="#youth-list" class="nav-button">ملابس شباب</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+  <section class="hero">
+    <h1>أهلاً بك في عالم الأناقة</h1>
+    <p>تسوق أحدث الموضات بأسعار لا تقاوم</p>
+  </section>
+
+  <!-- سلايدر بانر بسيط -->
+  <section class="banner-slider">
+    <div class="slide active">اسرع خدمه توصيل في مصر</div>
+    <div class="slide">خصومات تصل إلى 50% على تشكيلات الصيف</div>
+  </section>
+  <div class="section-button" id="offers-list">
+    <h2>🔥 عروض اليوم</h2>
+  </div>
+  
+  
+    <section class="products">
+      <div class="product-list">
+        <div class="product">
+          <img src="بنطلون.jpg" alt="جاكيت جلد">
+          <h3>بنطلون ميلتون ويد ليج</h3>
+          <p>450 جنيه بدلا من<del>600</del></p>
+          <button onclick="addToCart('بنطلون ميلتون ويدليج', 450)">أضف للسلة</button>
+        </div>
+        <div class="product">
+          <img src="تي شيرت.jpg" alt="هودي شتوي">
+          <h3>تي شيرت سوسته ابيض</h3>
+          <p>متاح جميع المقاسات</p>
+          <p>450 جنيه بدلا من<del>550</del></p>
+          <button onclick="addToCart('تي شيرت نص سوسته', 450)">أضف للسلة</button>
+
+
+
+        </div>
+      </div>
+    </section>
+  
+    <div class="section-button" id="youth-list">
+      <h2>🧥 ملابس شباب فقط</h2>
+    </div>
+  
+    <section class="products">
+      <div class="product-list">
+        <div class="product">
+          <img src="تي شيرت.jpg" alt="تيشرت شبابي">
+          <h3>تي شيرت ابيض</h3>
+          <p>متاح الابيض والاسود جميع المقاسات</p>
+          <p>500 جنيه</p>
+          <button onclick="addToCart('تي شيرت سوسته ابيض', 500)">أضف للسلة</button>
+
+        </div>
+        <div class="product">
+          <img src="بنطلون.jpg" alt="بنطلون جينز">
+          <h3>بنطلون ميلتون ويدليج</h3>
+          <p>متاح الاسود والرصاصي الفاتح جميع المقاسات</p>
+          <p>600 جنيه</p>
+          <button onclick="addToCart('بنطلون ميلتون ويد ليج', 600)">أضف للسلة</button>
+
+        </div>
+      </div>
+    </section>
+  <!-- تذييل الصفحة -->
+  <footer>
+    <p>📞 رقم الهاتف: 01055669619</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1AzzmTjWtd/" target="_blank">فيسبوك</a> |
+      <a href="https://wa.me/message/5DYCK4N3FBGOO1" target="_blank">واتساب</a> |
+      <a href="https://www.instagram.com/verooooo_4/?utm_source=ig_web_button_share_sheet" target="_blank">انستجرام</a>|
+      <a href="https://www.tiktok.com/@vero_wear_4?is_from_webapp=1&sender_device=pc" target="_blank">تيكتوك</a>
+    </div>
+    <p>جميع الحقوق محفوظة Vero Clothing© 2025</p>
+  </footer>
+  <script src="main.js"></script> 
+</body>
+</html>
